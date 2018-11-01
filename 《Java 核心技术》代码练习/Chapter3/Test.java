@@ -1,4 +1,4 @@
-package CHapter3;
+package Chapter3;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -33,6 +33,7 @@ public class Test {
 //        String names = scanner.nextLine();
 //        String ps = scanner.next();
 ////        System.out.println(ps);
+
 //        System.out.printf("%1$s %2$tB %2$te,%2$tY","Due date:", new Date());
 ////        System.out.printf(" %l$s %2$tB %2$te, %2$tY", "Due date:", new Date());
 ////        System.out.printf("%1$tB",new Date());
