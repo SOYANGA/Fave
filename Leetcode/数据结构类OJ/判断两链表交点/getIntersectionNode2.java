@@ -2,54 +2,63 @@ package GetIntersectionNode;
 
 /**
  * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
+ * public class ListNode2 {
+ * int val;
+ * ListNode2 next;
+ * ListNode2(int x) {
+ * val = x;
+ * next = null;
+ * }
  * }
  */
+class ListNode2 {
+    int val;
+    ListNode2 next;
+
+    ListNode2(int x) {
+        val = x;
+        next = null;
+    }
+}
 
 class Solution2 {
-    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        if(headA==null||headB==null){
+    public ListNode2 getIntersectionNode(ListNode2 headA, ListNode2 headB) {
+        if (headA == null || headB == null) {
             return null;
         }
-        if(headA==headB){
+        if (headA == headB) {
             return headA;
         }
-        int num1=0;
-        int num2=0;
+        int num1 = 0;
+        int num2 = 0;
         int count = 0;
-        ListNode temp3 = headA;
-        ListNode temp4 = headB;
-        for(ListNode temp = headA;temp!=null;temp=temp.next){
+        ListNode2 temp3 = headA;
+        ListNode2 temp4 = headB;
+        for (ListNode2 temp = headA; temp != null; temp = temp.next) {
             num1++;
         }
-        for(ListNode temp = headB;temp!=null;temp=temp.next){
+        for (ListNode2 temp = headB; temp != null; temp = temp.next) {
             num2++;
         }
-        if(num1>num2){
-            count = num1-num2;
-            while(count!=0){
+        if (num1 > num2) {
+            count = num1 - num2;
+            while (count != 0) {
                 temp3 = temp3.next;
                 count--;
             }
-        }else{
-            count = num2-num1;
-            while(count!=0){
-                temp4=temp4.next;
+        } else {
+            count = num2 - num1;
+            while (count != 0) {
+                temp4 = temp4.next;
                 count--;
             }
         }
-        while((temp3!=null)&&(temp4!=null)){
-            if(temp3==temp4){
+        while ((temp3 != null) && (temp4 != null)) {
+            if (temp3 == temp4) {
                 return temp3;
             }
-            temp3=temp3.next;
-            temp4=temp4.next;
+            temp3 = temp3.next;
+            temp4 = temp4.next;
         }
         return null;
 
