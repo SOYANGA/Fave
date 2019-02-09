@@ -1,0 +1,18 @@
+public void SelectionSort(int[] a,int n){
+    if(n<=1){
+        return;
+    }
+    fot(int i = 0; i < n; i++){
+        int minindex = i;
+        for(int j = i; j < n; j++){
+            if(a[j]<a[min]){
+                 min = j;
+            }
+        }
+        if(min != i){
+            int temp = a[i];
+            a[i] = a[min];
+            a[min] = temp;
+        }
+    }
+}
