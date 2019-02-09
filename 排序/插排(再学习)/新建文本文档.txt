@@ -1,0 +1,19 @@
+//插入排序，a表示数组，n表示数组大小
+public void insertionSort(int[] a, int n){
+    if(n <=1){
+        return;
+    }
+    for(int i = 1; i < n; ++i){
+        int value = a[i]; //记录要插入的元素
+        int j = i-1; //已排序区
+        //查找插入位置
+        for(; j >= 0; --j){
+            if(a[j] > value){
+                a[j+1] = a[j];//数据移动
+            }else{
+                break;
+            }
+        }
+        a[j+1] = value; //将要插入的位置插入合适的位置，有序区数量+1，无序区数量-1
+    }
+}
