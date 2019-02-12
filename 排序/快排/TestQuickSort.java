@@ -134,7 +134,7 @@ class Sort {
             this.InsertSort(a, left, right);
         } else {
             int div = PartSort1(a, left, right);
-            this.QuickSort(a, 0, div - 1);
+            this.QuickSort(a, right, div - 1);
             this.QuickSort(a, div + 1, right);
         }
     }
