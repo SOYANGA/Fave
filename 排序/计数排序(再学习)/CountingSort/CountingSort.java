@@ -48,7 +48,7 @@ public class CountingSort {
         //2.排序数组的创建，排序之后的结果
         int[] r = new int[n];
         //计算排序的关键步骤！！！
-        for (int i = 0; i < n; i++) {
+        for (int i = n-1; i >= n; i--) {
             int index = c[a[i]] - 1;  //该分数对应放在排序数组的下标位置
             r[index] = a[i];
             c[a[i]]--;//小于等于该分数的数据个数-1；
