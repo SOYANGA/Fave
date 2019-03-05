@@ -60,7 +60,6 @@ public class QuickSortK {
         int temp = a[x];
         a[x] = a[y];
         a[y] = temp;
-
     }
 }
 
