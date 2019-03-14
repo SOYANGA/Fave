@@ -39,4 +39,13 @@ public class Test2 {
         StringBuilder str1 = new StringBuilder(str);
         System.out.println(str1.reverse());
     }
+	//最优解
+	    //public static void main(String[] args){        
+		//Scanner sc=new Scanner(System.in);        
+		//while(sc.hasNext()){            
+		//String s=sc.nextLine();            
+		//for(int i=s.length()-1;i>=0;i--){                
+		//System.out.print(s.charAt(i));            
+		//}        
+		//}
 }
