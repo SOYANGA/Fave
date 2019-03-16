@@ -9,6 +9,8 @@ import java.util.ArrayList;
  * @Create: 2019-03-13 22:12
  * @Version 1.0
  */
+
+//方法1：暴力笨办法
 public class Test1 {
     public static void main(String[] args) {
         int[][] a = new int[][]{
@@ -55,3 +57,18 @@ public class Test1 {
         return false;
     }
 }
+
+//方法2： 遍历棋盘所有棋子 计算总值，大于一，则胜利，反之失败
+//    public boolean checkWon(int[][] board) {
+//        int count = 0;
+//        for(int i = 0; i < 3 ;i++ ){
+//            for(int j = 0; j < 3 ;j++){
+//                count += board[i][j];
+//            }
+//        }
+//        if(count==1){
+//            return true;
+//        }else{
+//            return false;
+//        }
+//    }
