@@ -21,7 +21,6 @@ public class Test1 {
         while (count < 10 && scanner.hasNextInt()) {// 注意，如果输入是多个测试用例，请通过while循环处理多个测试用例
             nums[count++] = scanner.nextInt();
         }
-        boolean flag = true;
         for (int i = 1; i < nums.length; i++) {
             int temp = nums[i];
             while ((temp--) != 0) {
