@@ -33,7 +33,7 @@ public class Test1 {
         return isPass;
     }
 
-    private int getDepth(TreeNode1 node) {
+    private int getDepth(TreeNode node) {
         if (node == null) {
             return 0;
         }
