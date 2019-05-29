@@ -32,7 +32,6 @@ public class SlidingWindowMaximum {
                 result[i - k + 1] = nums[list.peek()];
             }
         }
-
         return result;
     }
 }
