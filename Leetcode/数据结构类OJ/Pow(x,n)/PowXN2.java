@@ -33,7 +33,7 @@ public class PowXN2 {
                 pow *= newx;
             }
             newx *= newx;
-            n >>= 2;
+            n >>= 1;
         }
         if (isMinValue) {
             return pow * x;
@@ -54,7 +54,7 @@ public class PowXN2 {
                 pow *= newx;
             }
             newx *= newx;
-            newn >>= 2;
+            newn >>= 1;
         }
         return pow;
     }
