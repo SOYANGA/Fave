@@ -23,7 +23,6 @@ package MyHeap;
 
  */
 
-import javafx.geometry.VerticalDirection;
 
 /**
  * @program: DataStruct

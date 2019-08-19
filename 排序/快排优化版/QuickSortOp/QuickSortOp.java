@@ -127,7 +127,7 @@ public class QuickSortOp {
         for (int i = begin; i <= end; i++) {
             int value = a[i];  //要插入适当位置的值
             int j = i - 1; //有序区
-            for (; j >= 0; j--) {
+            for (; j >= begin; j--) {
                 if (a[j] > value) {
                     a[j + 1] = a[j];
                 } else {
